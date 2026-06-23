@@ -14,7 +14,7 @@ class Falsebound_Text_Editor:
         last_index = len(raw_input) - 1
 
         for i, char in enumerate(raw_input):
-            byte1 = "A0" if i == last_index else "00"
+            byte1 = "A0" if i == last_index else "20"
             byte2_val = ord(char) - 0x20
 
             if byte2_val < 0:
